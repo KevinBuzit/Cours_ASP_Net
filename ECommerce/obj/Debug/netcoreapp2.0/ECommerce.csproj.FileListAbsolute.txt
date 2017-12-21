@@ -1,0 +1,11 @@
+D:\CESI\ASP_Net\SolutionAspNet\ECommerce\bin\Debug\netcoreapp2.0\ECommerce.deps.json
+D:\CESI\ASP_Net\SolutionAspNet\ECommerce\bin\Debug\netcoreapp2.0\ECommerce.runtimeconfig.json
+D:\CESI\ASP_Net\SolutionAspNet\ECommerce\bin\Debug\netcoreapp2.0\ECommerce.runtimeconfig.dev.json
+D:\CESI\ASP_Net\SolutionAspNet\ECommerce\bin\Debug\netcoreapp2.0\ECommerce.dll
+D:\CESI\ASP_Net\SolutionAspNet\ECommerce\obj\Debug\netcoreapp2.0\ECommerce.csprojResolveAssemblyReference.cache
+D:\CESI\ASP_Net\SolutionAspNet\ECommerce\obj\Debug\netcoreapp2.0\ECommerce.csproj.CoreCompileInputs.cache
+D:\CESI\ASP_Net\SolutionAspNet\ECommerce\obj\Debug\netcoreapp2.0\ECommerce.AssemblyInfoInputs.cache
+D:\CESI\ASP_Net\SolutionAspNet\ECommerce\obj\Debug\netcoreapp2.0\ECommerce.AssemblyInfo.cs
+D:\CESI\ASP_Net\SolutionAspNet\ECommerce\bin\Debug\netcoreapp2.0\ECommerce.pdb
+D:\CESI\ASP_Net\SolutionAspNet\ECommerce\obj\Debug\netcoreapp2.0\ECommerce.dll
+D:\CESI\ASP_Net\SolutionAspNet\ECommerce\obj\Debug\netcoreapp2.0\ECommerce.pdb
