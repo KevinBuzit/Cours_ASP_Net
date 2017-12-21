@@ -7,12 +7,12 @@ namespace ECommerce.Models.ViewModels
 {
     public class ListeProduitsViewModels
     {
-        private IQueryable<Produit> listeProduits { get; set; }
-        private PaginationInfo PaginationInfos { get; set; }
+        public IQueryable<Produit> ListeProduits { get; set; }
+        public PaginationInfo PaginationInfos { get; set; }
 
         public ListeProduitsViewModels(IQueryable<Produit> _produits, PaginationInfo _info)
         {
-            listeProduits = _produits;
+            ListeProduits = _produits;
             PaginationInfos = _info;
         }
     }

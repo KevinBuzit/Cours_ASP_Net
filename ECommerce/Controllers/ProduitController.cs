@@ -23,19 +23,24 @@ namespace ECommerce.Controllers
         {
             if(id != null)
             {
-                return View(myObject.Produits().Where(t => t.IDProduit == id));
+                IQueryable<Produit> list = myObject.Produits().Where(t => t.IDProduit == id);
+                PaginationInfo infos = new PaginationInfo(list.Count(), pageSize, 1);
+                ListeProduitsViewModels viewModel = new ListeProduitsViewModels(list, infos);
+                return View();
             }
             else if(page != null)
             {
                 IQueryable<Produit> list = myObject.Produits();
-                //PaginationInfo infos = new PaginationInfo(list.Count(), pageSize, page.Value);
+                PaginationInfo infos = new PaginationInfo(list.Count(), pageSize, page.Value);
                 list = list.OrderBy(i => i.IDProduit).Skip((page.Value - 1) * pageSize).Take(pageSize);
-                //ListeProduitsViewModels viewModel = new ListeProduitsViewModels(list, infos);
-                return View(list);
+                ListeProduitsViewModels viewModel = new ListeProduitsViewModels(list, infos);
+                return View(viewModel);
             }
             else
             {
-                return View(myObject.Produits());
+                PaginationInfo infos = new PaginationInfo(myObject.Produits().Count(), pageSize, 1);
+                ListeProduitsViewModels viewModel = new ListeProduitsViewModels(myObject.Produits(), infos);
+                return View(viewModel);
             }
         }
 
