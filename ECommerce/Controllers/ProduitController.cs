@@ -26,7 +26,7 @@ namespace ECommerce.Controllers
                 IQueryable<Produit> list = myObject.Produits().Where(t => t.IDProduit == id);
                 PaginationInfo infos = new PaginationInfo(list.Count(), pageSize, 1);
                 ListeProduitsViewModels viewModel = new ListeProduitsViewModels(list, infos);
-                return View();
+                return View(viewModel);
             }
             else if(page != null)
             {

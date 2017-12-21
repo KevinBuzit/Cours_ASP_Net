@@ -39,16 +39,9 @@
                 </tbody>
             </table>
         </div>
-
-        <div class="text-center">
-            <ul id="menu_horizontal" class="pagination">
-                @for (int i = 0; i < Model.PaginationInfos.GetNombrePage(); i++)
-            {
-                    <li><a href="/Produit/List/@(i+1)/">@(i + 1)</a></li>
-                }
-            </ul>
-        </div>
     </div>
+
+    <div page-model="@Model.PaginationInfos" page-action="List"></div> 
 </body>
 
 </html>
