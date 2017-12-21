@@ -6,11 +6,15 @@
 <html>
     <head>
         <link href="~/css/StyleSheet.css" rel="stylesheet" />
+        <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
     </head>
-    <body>
-        <p>
-            <h2>Liste des produits</h2>
-            <table border="1">
+<body>
+    <div class="text-center jumbotron">
+        <h1>Liste des produits</h1>
+    </div>
+    <div class="center-block container">
+        <div class="table-responsive">
+            <table class="table table-striped table-hover" border="1">
                 <thead>
                     <tr>
                         <th>ID</th>
@@ -31,14 +35,20 @@
                             <td>@r.Categorie</td>
                         </tr>
                     }
-                    
+
                 </tbody>
             </table>
-            <ul id="menu_horizontal">
+        </div>
+
+        <div class="text-center">
+            <ul id="menu_horizontal" class="pagination">
                 @for (int i = 0; i < Model.PaginationInfos.GetNombrePage(); i++)
-                {
-                    <li><a href="/Produit/List/@(i+1)/">Page @(i + 1)</a></li>
+            {
+                    <li><a href="/Produit/List/@(i+1)/">@(i + 1)</a></li>
                 }
             </ul>
-    </body>
+        </div>
+    </div>
+</body>
+
 </html>
